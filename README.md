@@ -50,7 +50,7 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 - MALL vs. PBL (Technology-Based with a Feature vs. Non-Technology-Based with a Feature):
 - MALL generally has a bigger impact on improving SDL compared to PBL (Paper-Based Learning) technology-based methods when both include a particular feature.
 
-<img width="600" height="400" alt="Screenshot 2024-04-13 104923" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce">
+<img width="800" height="600" alt="Screenshot 2024-04-13 104923" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce">
 
 
 
