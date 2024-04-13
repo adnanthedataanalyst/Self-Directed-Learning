@@ -37,13 +37,13 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 # Publication bias
 
 Publication bias was assessed using funnel plots and Rosenthal's fail-safe N test. Potential publication bias was noted, but it was deemed insignificant based on Rosenthal’s fail-safe N test.
-
-- <img width="800" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/5f78b5f2-2716-4447-a611-44e51e1e774d">
-- <img width="800" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/26f1b2d8-656c-4aa0-a4dd-bb255326c3a9">
+<img width="800" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/5f78b5f2-2716-4447-a611-44e51e1e774d">
+<img width="800" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/26f1b2d8-656c-4aa0-a4dd-bb255326c3a9">
 
  
 
-### **RQ1:** 
+### **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALL vs CBL, MALL vs MMF, and MALL vs PBL)?
+
 - **The MALL vs CBL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016) to calculate an aggregate effect size.
 - Findings are organized by research questions.
 - **MALL vs. MMF (Technology-Based with a Feature vs. Technology-Based without a Feature):**
@@ -68,8 +68,10 @@ Publication bias was assessed using funnel plots and Rosenthal's fail-safe N tes
 
 Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interval, df = degree of freedom., g= Hedges’ g, Fail-safe N > 5 Nes + 10
 
-### **RQ2:**
+### **RQ2:** What variables moderate MALL impacts on SDL in each comparison condition?
+
 - **Subgroup analysis**
+  
 - **Significant moderators across all conditions:**
   - Application type, assessment type, language proficiency, mother tongue, target language, and target language skills significantly impact MALL effectiveness on SDL as contrasted to both MMF and PBL comparison conditions.
 
