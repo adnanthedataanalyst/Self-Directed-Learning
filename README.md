@@ -62,10 +62,10 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 ## **Moderators Varying Based on Conditions:**
 - The analysis shows that in MALL vs MMF comparison condition, feedback, intervention duration, and learning context **did not significantly** impact MALL's effect on SDL.
 - However, in MALL vs PBL comparison condition, all three factors had a significant influence.
-- 
- <img width="527" alt="5" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/935a6145-7121-4b5d-9424-11b4f8ca0b3d">
+
+ <img width="800" alt="5" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/935a6145-7121-4b5d-9424-11b4f8ca0b3d">
  
-<img width="533" alt="6" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/7683e42b-6490-4638-a673-4079d4b003ec">
+<img width="800" alt="6" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/7683e42b-6490-4638-a673-4079d4b003ec">
  
  
   ![Moderator Chart](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/4fcb695f-463f-428e-b26f-cd0115f83fc9)
