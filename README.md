@@ -45,100 +45,6 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 - **MALL vs. PBL (Technology-Based vs. Non-Technology-Based):**
   - MALL generally has a bigger impact on improving SDL compared to PBL (Paper-Based Learning)
  
-
-<table>
-  <tr>
-    <th></th>
-    <th style="width: 150px;">MMF</th>
-    <th style="width: 150px;">PBL</th>
-  </tr>
-  <tr>
-    <td>Model</td>
-    <td>RE</td>
-    <td>RE</td>
-  </tr>
-  <tr>
-    <td>K</td>
-    <td>7</td>
-    <td>26</td>
-  </tr>
-  <tr>
-    <td>g</td>
-    <td>0.40*</td>
-    <td>0.88*</td>
-  </tr>
-  <tr>
-    <td>95% CI</td>
-    <td>0.02 – 0.78</td>
-    <td>0.58 – 1.19</td>
-  </tr>
-  <tr>
-    <td>p</td>
-    <td>0.0418</td>
-    <td>0.0001</td>
-  </tr>
-  <tr>
-    <td>Test of heterogeneity</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Q</td>
-    <td>21.46*</td>
-    <td>614.25*</td>
-  </tr>
-  <tr>
-    <td>df</td>
-    <td>6</td>
-    <td>25</td>
-  </tr>
-  <tr>
-    <td>I^2%</td>
-    <td>65.01</td>
-    <td>86.45</td>
-  </tr>
-  <tr>
-    <td>P</td>
-    <td>0.0015</td>
-    <td>0.0001</td>
-  </tr>
-  <tr>
-    <td>Participants</td>
-    <td>459</td>
-    <td>1,505</td>
-  </tr>
-  <tr>
-    <td>Classic Fail-safe N</td>
-    <td>45</td>
-    <td>1,950</td>
-  </tr>
-</table>
-
-<p>Note. *p &lt; .05, NR= not reported, K = number of studies, CI = confidence interval, df = degree of freedom., g= Hedges’ g, Fail-safe N &gt; 5 Nes + 10</p>
-
-
-
- 
-|                     |       MMF        |       PBL        |
-|---------------------|------------------|------------------|
-| Model               |        RE        |        RE        |
-| K                   |        7         |        26        |
-| g                   |      0.40*       |      0.88*       |
-| 95% CI              |   0.02 – 0.78    |   0.58 – 1.19    |
-| p                   |      0.0418      |      0.0001      |
-| Test of heterogeneity |                 |                 |
-| Q                   |      21.46*      |     614.25*      |
-| df                  |        6         |        25        |
-| I^2%                |      65.01       |      86.45       |
-| P                   |      0.0015      |      0.0001      |
-| Participants        |       459        |       1,505      |
-| Classic Fail-safe N |        45        |       1,950      |
-
-Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interval, df = degree of freedom., g= Hedges’ g, Fail-safe N > 5 Nes + 10
-
-
-
- 
 |                     | MMF     | PBL     |
 |---------------------|---------|---------|
 | Model               | RE      | RE      |
@@ -156,13 +62,86 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 
 Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interval, df = degree of freedom., g= Hedges’ g, Fail-safe N > 5 Nes + 10
 
-    
-  ![Comparison Chart](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce)
-
 ### **RQ2:**
 - **Subgroup analysis**
 - **Significant moderators across all conditions:**
   - Application type, assessment type, language proficiency, mother tongue, target language, and target language skills significantly impact MALL effectiveness on SDL as contrasted to both MMF and PBL comparison conditions.
+
+
+```markdown
+| Moderator                 | MMF                                        | PBL                                         |
+|---------------------------|--------------------------------------------|---------------------------------------------|
+| Application type          | Q (6) =13.74, I^2 = 86.33, p =0.00        | Q (12) =97.53, I^2 = 88.01, p =0.00         |
+|                           |                                            |                                             |
+| 3D Talking head           | K=1, g=0.25, 95% CI [-0.42 - 0.91]        | 0                                           |
+| ACO                       | K=1, g=0.34, 95% CI [-0.38 - 1.05]        |                                             |
+| CollocatApp               | 0                                          | K=1, g=0.35, 95% CI [0.59 - 1.29]          |
+| Duolingo                  | K=3, g=-0.7, 95% CI [-2.26 - 0.8]         | K=3, g=-1.62, 95% CI [2.43 - 0.81]         |
+| Electronic Dictionary     | 0                                          | K=1, g=-0.76, 95% CI [1.76 - 0.24]          |
+| EVLAPP-SRLM               | 0                                          | K=1, g=-1.33, 95% CI [2.27 - 0.39]          |
+| Flash Card                | 0                                          | K=1, g=-1.52, 95% CI [2.42 - 0.63]          |
+| GBoard                    | K=1, g=0.03, 95% CI [-0.9 - 0.95]         | 0                                           |
+| MeWe                      | 0                                          | K=1, g=-0.86, 95% CI [1.84 - 0.12]          |
+| MMS                       | 0                                          | K=1, g=-1.28, 95% CI [2.48 - 0.09]          |
+| SMS                       | 0                                          | K=8, g=-0.6, 95% CI [1.36 - 0.17]           |
+| SRL                       | 0                                          | K=2, g=-1.78, 95% CI [2.57 - 1]             |
+| Text-to-speech            | 0                                          | K=1, g=-1.3, 95% CI [2.46 - 0.15]           |
+| WhatsApp                  | 0                                          | K=3, g=-0.78, 95% CI [1.56 - 0.02]          |
+| Word learning             | K=2, g=0.8, 95% CI [0.33 - 1.26]          | K=2, g=-0.73, 95% CI [1.56 - 0.1]           |
+|                           |                                            |                                             |
+| Assessment type           | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (8) =93.61, I^2 = 83.53, p =0.00         |
+|                           |                                            |                                             |
+| Building a sentence with a new word | 0                                  | K=1, g=0.08, 95% CI [0.5 - 1.1]           |
+| Fill in the blank         | 0                                          | K=2, g=0.34, 95% CI [0.26 - 0.92]          |
+| Multiple choice           | 0                                          | K=12, g=0.18, 95% CI [0.25 - 0.61]         |
+| Multiple choice and writing | 0                                        | K=1, g=0.12, 95% CI [0.67 - 0.91]          |
+| NR                        | K=3, g=-0.24, 95% CI [-1.82 - 1.34]      | K=5, g=-0.84, 95% CI [1.29 - 0.39]         |
+| Pronouncing words         | K=1, g=0.25, 95% CI [-0.42 - 0.91]       | 0                                           |
+| Recording their pronunciation | K=1, g=0.03, 95% CI [-0.9 - 0.95]      | K=2, g=-0.42, 95% CI [1.17 - 0]            |
+| Recording their voices (speaking) | 0                                     | K=1, g=0.88, 95% CI [0.05 - 1.72]         |
+| Write a sentence          | 0                                          | K=1, g=-0.4, 95% CI [0.99 - 0.19]          |
+| Write down translation    | K=2, g=0.08, 95% CI [0.33 - 1.26]        | 0                                           |
+| Write meaning             | 0                                          | K=1, g=2.7, 95% CI [0.87 - 2.54]           |
+|                           |                                            |                                             |
+| Language proficiency      | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (2) =12.33, I^2 = 87.67, p =0.00         |
+|                           |                                            |                                             |
+| Beginner                  | K=1, g=0.22, 95% CI [0.22-0.22]           | K=10, g=-0.02, 95% CI [-0.95 - 0.93]      |
+| Beyond-beginner           | K=1, g=0.55, 95% CI [0.03 - 11]           | K=7, g=0.49, 95% CI [0.21 - 0.76]         |
+| Mixed                     | K=1, g=0.22, 95% CI [1.2 - 76]            | 0                                           |
+| NR                        | K=3, g=-0.25, 95% CI [-0.91 - 0.42]       | K=9, g=0.03, 95% CI [0.05 - 0.55]         |
+|                           |                                            |                                             |
+| Mother tongue             | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (8) =84.46, I^2 = 87.67, p =0.00         |
+|                           |                                            |                                             |
+| Arabic                    | 0                                          | K=1, g=-0.24
+
+, 95% CI [-1.19 - 0.71]        |
+| Chinese                   | K=2, g=0.07, 95% CI [1.43 - 0.24]         | K=4, g=0.01, 95% CI [-0.58 - 0.58]        |
+| English                   | 0                                          | K=1, g=-0.34, 95% CI [-1.38 - 0.7]         |
+| Japanese                  | 0                                          | K=2, g=-0.82, 95% CI [-1.41 - -0.24]       |
+| Macedonian                | K=1, g=-0.77, 95% CI [-1.64 - 5]          | 0                                           |
+| Malay                     | K=1, g=-0.55, 95% CI [-1.12 - 64]         | 0                                           |
+| Persian                   | 0                                          | K=8, g=0.65, 95% CI [0.09 - 1.22]          |
+| Polish                    | 0                                          | K=1, g=0.08, 95% CI [-0.57 - 0.73]         |
+| Spanish                   | K=3, g=-0.8, 95% CI [-1.26 - -0.33]       | K=3, g=-0.66, 95% CI [-1.28 - -0.04]      |
+| Thai                      | 0                                          | K=1, g=-0.1, 95% CI [-0.78 - 0.58]         |
+| Turkish                   | 0                                          | K=5, g=0.28, 95% CI [-0.32 - 0.86]         |
+|                           |                                            |                                             |
+| Target language           | Q (1) =7.92, I^2 = 63.38, p =0.00         | Q (1) =16.01, I^2 = 85.62, p =0.00        |
+|                           |                                            |                                             |
+| English                   | K=4, g=0.42, 95% CI [0.82 - 1.5]          | K=22, g=0.53, 95% CI [0.19 - 0.89]        |
+| French                    | K=3, g=-0.66, 95% CI [1.11 – 9.78]        | K=4, g=-0.69, 95% CI [1.03 - 0.36]        |
+|                           |                                            |                                             |
+| Target language skills    | Q (4) =19.82, I^2 = 6.43, p =0.00         | Q (5) =70.22, I^2 = 83.11, p =0.00        |
+|                           |                                            |                                             |
+| Listening Comprehension   | K=1, g=-1.21, 95% CI [-1.21- -1.21]       | K=2, g=-1.12, 95% CI [-3.43 - 1.2]        |
+| Pronunciation             | K=2, g=0.67, 95% CI [0.17 - 1.51]         | K=2, g=0.44, 95% CI [-0.3 - 1.16]         |
+| Reading Comprehension     | K=1, g=0.26, 95% CI [-0.72 - 1.24]        | K=2, g=-0.08, 95% CI [-0.54 - 89]         |
+| Speaking                  | 0                                          | K=1, g=1.73, 95% CI [0.92 - 2.53]         |
+| Vocabulary                | K=2, g=1.28, 95% CI [0.53 - 2.03]         | K=18, g=1.01, 95% CI [0.66 - 1.36]        |
+| Writing                   | K=1, g=1.21, 95% CI [0.22 - 2.21]         | K=1, g=0.3, 95% CI [-0.39 - 38]           |
+```
+
+ 
   
 ![Moderator Charts](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/c23bbccb-24e9-4439-887e-5cbb8ee05631)
 ![Moderator Charts](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/23ed9672-4fa1-4e8b-931a-86a718b2926f)
