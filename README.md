@@ -32,12 +32,23 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 
 **Tsai's framework** categorizes studies based on comparison conditions, guiding the analysis of MALL's impact on SDL.
 
-**Method:**
-The meta-analysis integrates data from 27 selected studies through pre-defined selection criteria. 
-Hedge's g is employed as the effect size metric, utilizing a random-effects model to address heterogeneity. 
-Moderation analysis is conducted using subgroup and meta-regression analyses.
+# Method:
+- The meta-analysis integrates data from selected studies  through pre-defined selection criteria.
+- Hedge's g is employed as the effect size metric, utilizing a random-effects model to address heterogeneity.
+- Moderation analysis is conducted using subgroup and meta-regression analyses.
 
-**Results:**
-Findings indicate significant differences in SDL effectiveness between MALL and MMF, as well as MALL and PBL conditions. Various moderators including application type, assessment type, language proficiency, and target language significantly influence MALL's impact on SDL. Publication bias assessment suggests robustness in findings.
+# Results:
+
+- This meta-analysis synthesized data from 7 studies comparing MALL vs MMF and 26 studies comparing MALL vs PBL, all published between 2009 and 2021.
+- These studies collectively involved 1,964 participants and aimed to assess MALL's effect on SDL under varying comparison conditions.
+- **The MALL vs CBL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016) to calculate an aggregate effect size.
+- Findings are organized by research questions.
+
+- **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (
+MALLvs MMF, and MALL vs PBL)?
+<img width="459" alt="Screenshot 2024-04-13 104923" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce">
+
+
+- **RQ2:** What variables moderate MALL impacts on SDL in each comparison condition?
 
  
