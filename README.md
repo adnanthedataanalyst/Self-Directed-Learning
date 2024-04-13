@@ -68,3 +68,13 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
     <img width="800" height="600" alt="5" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/62c7792f-3aa7-4684-9710-3123dc01e7a8">
     <img width="800" height="600" alt="6" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/57421b25-2037-4dbc-84f7-b689f2c44e5d">
 </div>
+
+# Univariate and Multivariate Meta-Regression Analysis
+**Univariate and Multivariate Meta-Regression Analysis**
+In this study, the univariate meta-regression analysis (Table 7) showed no single 
+independent variable that could explain the variability in the MMF condition. 
+
+However, in the PBL condition (Table 8), device type and target language accounted for 23% and 12% of the 
+variability, respectively, in the univariate analysis. Due to the high heterogeneity (86%) in PBL 
+studies, a multivariate meta-regression analysis (Table 9) was conducted. The best model, which 
+included application type, assessment type, device type, la
