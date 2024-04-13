@@ -219,9 +219,34 @@ Note. * =p < .05, RSR= Residual standard error, Adj R^2 =Adjusted R Square.
 
 # Publication bias
 
-Publication bias was assessed using funnel plots and Rosenthal's fail-safe N test. 
+Publication bias was assessed using funnel plots and Rosenthal's fail-safe N test. Potential publication bias was noted, but it was deemed insignificant based on Rosenthal’s fail-safe N test.
 
 - <img width="800" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/5f78b5f2-2716-4447-a611-44e51e1e774d">
 - <img width="800" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/26f1b2d8-656c-4aa0-a4dd-bb255326c3a9">
 
+# Insights and Applications for Practitioners, Researchers, Teachers, App Developers, and Decision Makers
 
+**Practitioners:**
+- Finding: The study revealed significant differences between MALL and paper-based learning (PBL), with MALL showing a medium-to-large effect (g = .88) on self-directed learning (SDL).
+- Translation: Practitioners can prioritize the integration of MALL tools and platforms into their teaching practices, as these technologies have been shown to significantly enhance students' self-directed learning outcomes compared to traditional paper-based methods.
+
+**Researchers:**
+
+- Finding: Variables such as application type, assessment type, language proficiency, and target language skills significantly influenced MALL effectiveness on SDL in both MALL minus feature (MMF) and PBL conditions.
+- Translation: Researchers can conduct further investigations to explore the specific mechanisms through which these variables impact self-directed learning outcomes in MALL environments.
+- This could involve experimental studies or qualitative research to gain deeper insights into the interaction between these variables and SDL.
+
+**Teachers:**
+- Finding: Feedback mechanisms significantly influenced MALL's effect on SDL in comparison to PBL but not MMF.
+- Translation: Teachers can prioritize the implementation of effective feedback mechanisms in MALL activities to support students' autonomy and competence in language acquisition.
+- This could involve providing timely and personalized feedback to students based on their performance and progress in MALL tasks.
+
+**App Developers:**
+- Finding: Customizable feedback options and adaptive assessment mechanisms were identified as features that significantly support self-directed learning in MALL environments.
+- Translation: App developers can focus on integrating customizable feedback options and adaptive assessment mechanisms into their MALL applications.
+- This could involve designing feedback systems that allow users to personalize their feedback preferences and incorporating adaptive assessment algorithms that adjust the difficulty level of tasks based on individual learner performance.
+
+**Decision Makers:**
+- Finding: Heterogeneity was observed among comparison conditions, indicating variability in study results.
+- Translation: Decision makers can use this information to understand the diverse outcomes associated with different MALL approaches and make informed decisions regarding the adoption of MALL programs in educational institutions.
+- They can prioritize resources and support initiatives that align with best practices in MALL and promote the effective integration of technology into language learning curricula.
