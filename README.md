@@ -173,9 +173,9 @@ Note. 0= A value of "0" in the table indicates that there were no available stud
 
 
 ## **Univariate Meta-Regression Analysis**
-- In this study, the univariate meta-regression analysis showed no single independent variable that could explain the variability in the MMF condition. However, in the PBL condition, device type and target language accounted for 23% and 12% of the variability, respectively, in the univariate analysis.
+- In this study, the univariate meta-regression analysis showed no single independent variable that could explain the variability in the MALL vs MMF condition. However, in the MALL vs PBLcondition, device type and target language accounted for 23% and 12% of the variability, respectively, in the univariate analysis.
   
-**Table 7: Univariate Regression Results for Moderators in MMF**
+**Table 7: Univariate Regression Results for Moderators in MALL vs MMF**
 | Moderator            | Adj R^2 | RSR  | p     |
 |----------------------|---------|------|-------|
 | Application type     | -0.15   | 0.53 | 0.59  |
@@ -192,7 +192,7 @@ Note. 0= A value of "0" in the table indicates that there were no available stud
 
 Note. * =p < .05, RSR= Residual standard error, Adj R^2 =Adjusted R Square.
 
-**Table 8: Univariate Regression Results for Moderators in PBL**
+**Table 8: Univariate Regression Results for Moderators in MALL vs PBL**
 
 | Moderator            | Adj R^2 | RSR  | p-value |
 |----------------------|---------|------|---------|
@@ -215,7 +215,7 @@ Note. RSR= Residual standard error, Adj R^2 =Adjusted R Square.
 
 
 ## **Multivariate Meta-Regression Analysis**
-- Due to the high heterogeneity (86%) in PBL studies, a multivariate meta-regression analysis was conducted. The best model, which included application type, assessment type, device type, language proficiency, learning context, and mother tongue, accounted for 92% of the variability.
+- Due to the high heterogeneity (86%) in MALL vs PBL studies, a multivariate meta-regression analysis was conducted. The best model, which included application type, assessment type, device type, language proficiency, learning context, and mother tongue, accounted for 92% of the variability.
 
 **Table 9: The Summary Model of Application Type, Assessment Type, Device Type, Language Proficiency, Learning Context, and Mother Tongue**
 | Model | Adj R^2 | RSR  | p-value |
