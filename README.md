@@ -167,7 +167,44 @@ Note. 0= A value of "0" in the table indicates that there were no available stud
 ## **Univariate Meta-Regression Analysis**
 - In this study, the univariate meta-regression analysis showed no single independent variable that could explain the variability in the MMF condition. However, in the PBL condition, device type and target language accounted for 23% and 12% of the variability, respectively, in the univariate analysis.
   
-  ![Meta-Regression Analysis](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/ed6699b8-e446-4114-a7d8-958579d69053)
+**Table 7: Univariate Regression Results for Moderators in MMF**
+| Moderator            | Adj R^2 | RSR  | p     |
+|----------------------|---------|------|-------|
+| Application type     | -0.15   | 0.53 | 0.59  |
+| Assessment type      | -0.15   | 0.53 | 0.59  |
+| Device type          | -0.17   | 0.54 | 0.60  |
+| Feedback             | -0.15   | 0.54 | 0.68  |
+| Intervention duration| -0.83   | 0.67 | 0.95  |
+| Language proficiency | -0.15   | 0.53 | 0.59  |
+| Learning context     | -0.2    | 0.55 | 0.99  |
+| Mother tongue        | -0.15   | 0.53 | 0.59  |
+| Publication type     | -0.16   | 0.54 | 0.68  |
+| Target language      | 0.04    | 0.49 | 0.32  |
+| Target language skills | 0.84  | 0.20 | 0.10  |
+
+Note. * =p < .05, RSR= Residual standard error, Adj R^2 =Adjusted R Square.
+
+**Table 8: Univariate Regression Results for Moderators in PBL**
+
+| Moderator            | Adj R^2 | RSR  | p-value |
+|----------------------|---------|------|---------|
+| Application type     | 0.14    | 0.77 | 0.30    |
+| Assessment type      | 0.29    | 0.70 | 0.07    |
+| Device type          | 0.23    | 0.73 | 0.01    |
+| Educational level    | -0.13   | 0.88 | 0.95    |
+| Feedback             | -0.04   | 0.84 | 0.74    |
+| Intervention duration| 0.02    | 0.82 | 0.33    |
+| Language Proficiency| -0.08   | 0.86 | 0.90    |
+| Learning context     | -0.09   | 0.86 | 0.93    |
+| Mother tongue        | 0.18    | 0.75 | 0.18    |
+| Publication type     | -0.12   | 0.87 | 0.93    |
+| Research setting     | -0.03   | 0.84 | 0.53    |
+| Target language      | 0.12    | 0.78 | 0.04    |
+| Target language skills | -0.03 | 0.73 | 0.07    |
+
+Note. RSR= Residual standard error, Adj R^2 =Adjusted R Square.
+
+
 
 ## **Multivariate Meta-Regression Analysis**
 - Due to the high heterogeneity (86%) in PBL studies, a multivariate meta-regression analysis was conducted. The best model, which included application type, assessment type, device type, language proficiency, learning context, and mother tongue, accounted for 92% of the variability.
