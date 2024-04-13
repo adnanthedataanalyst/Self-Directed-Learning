@@ -60,20 +60,11 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 - **Moderators Varying Based on Conditions:**
 - The analysis shows that in MALL vs MMF comparison condition, feedback, intervention  duration, and learning context did not significantly impact MALL's effect on SDL. However, in MALL VSPBL comparison condition, all three factors had a significant influence.  
 
-<img width="800" height="600" alt="1" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/c23bbccb-24e9-4439-887e-5cbb8ee05631">
-
-<img width="800" height="600" alt="2" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/23ed9672-4fa1-4e8b-931a-86a718b2926f">
-
-<img width="800" height="600" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/8ad0baa9-b8b6-47f8-910d-63302f83e571">
-
-<img width="800" height="600" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/d5fc6ef1-b6ee-4114-9ba7-1a8e6622134d">
-
-<img width="800" height="600" alt="5" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/62c7792f-3aa7-4684-9710-3123dc01e7a8">
-
-<img width="800" height="600" alt="6" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/57421b25-2037-4dbc-84f7-b689f2c44e5d">
-
-
-
-
-
- 
+<div style="display: flex; flex-wrap: wrap;">
+    <img width="800" height="600" alt="1" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/c23bbccb-24e9-4439-887e-5cbb8ee05631">
+    <img width="800" height="600" alt="2" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/23ed9672-4fa1-4e8b-931a-86a718b2926f">
+    <img width="800" height="600" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/8ad0baa9-b8b6-47f8-910d-63302f83e571">
+    <img width="800" height="600" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/d5fc6ef1-b6ee-4114-9ba7-1a8e6622134d">
+    <img width="800" height="600" alt="5" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/62c7792f-3aa7-4684-9710-3123dc01e7a8">
+    <img width="800" height="600" alt="6" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/57421b25-2037-4dbc-84f7-b689f2c44e5d">
+</div>
