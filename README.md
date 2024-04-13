@@ -110,9 +110,7 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 |                           |                                            |                                             |
 | **Mother tongue**             | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (8) =84.46, I^2 = 87.67, p =0.00         |
 |                           |                                            |                                             |
-| Arabic                    | 0                                          | K=1, g=-0.24
-
-, 95% CI [-1.19 - 0.71]        |
+| Arabic                    | 0                                          | K=1, g=-0.24, 95% CI [-1.19 - 0.71]        |
 | Chinese                   | K=2, g=0.07, 95% CI [1.43 - 0.24]         | K=4, g=0.01, 95% CI [-0.58 - 0.58]        |
 | English                   | 0                                          | K=1, g=-0.34, 95% CI [-1.38 - 0.7]         |
 | Japanese                  | 0                                          | K=2, g=-0.82, 95% CI [-1.41 - -0.24]       |
