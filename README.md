@@ -5,7 +5,12 @@
  
 # Objectives
 
- This study, grounded in self-determination theory, delves into the impact of Mobile-Assisted Language Learning (MALL) on Self-Directed Learning (SDL) by analyzing its effects across different comparison conditions and identifying condition-specific moderators. 
+- This study, grounded in self-determination theory, delves into the impact of Mobile-Assisted Language Learning (MALL) on Self-Directed Learning (SDL) by analyzing its effects across different comparison conditions:
+  - MALL vs computer-based learning (CBL)
+  - MALL vs MALL minus experimental feature (MMF)
+  - MALL vs paper-based learning (PBL)
+- It also aims to identify condition-specific moderators.
+
  
  Research questions focus comparing the effect of MALL on SDL in comparison to computer-based learning (CBL), MALL minus experimental feature (MMF), and paper-based learning (PBL), as well as moderators influencing these effects.
  
