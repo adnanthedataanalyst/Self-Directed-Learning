@@ -67,11 +67,9 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 - **Significant moderators across all conditions:**
   - Application type, assessment type, language proficiency, mother tongue, target language, and target language skills significantly impact MALL effectiveness on SDL as contrasted to both MMF and PBL comparison conditions.
 
-
-```markdown
 | Moderator                 | MMF                                        | PBL                                         |
 |---------------------------|--------------------------------------------|---------------------------------------------|
-| Application type          | Q (6) =13.74, I^2 = 86.33, p =0.00        | Q (12) =97.53, I^2 = 88.01, p =0.00         |
+| **Application type**          | Q (6) =13.74, I^2 = 86.33, p =0.00        | Q (12) =97.53, I^2 = 88.01, p =0.00         |
 |                           |                                            |                                             |
 | 3D Talking head           | K=1, g=0.25, 95% CI [-0.42 - 0.91]        | 0                                           |
 | ACO                       | K=1, g=0.34, 95% CI [-0.38 - 1.05]        |                                             |
@@ -89,7 +87,7 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 | WhatsApp                  | 0                                          | K=3, g=-0.78, 95% CI [1.56 - 0.02]          |
 | Word learning             | K=2, g=0.8, 95% CI [0.33 - 1.26]          | K=2, g=-0.73, 95% CI [1.56 - 0.1]           |
 |                           |                                            |                                             |
-| Assessment type           | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (8) =93.61, I^2 = 83.53, p =0.00         |
+| **Assessment type**           | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (8) =93.61, I^2 = 83.53, p =0.00         |
 |                           |                                            |                                             |
 | Building a sentence with a new word | 0                                  | K=1, g=0.08, 95% CI [0.5 - 1.1]           |
 | Fill in the blank         | 0                                          | K=2, g=0.34, 95% CI [0.26 - 0.92]          |
@@ -103,14 +101,14 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 | Write down translation    | K=2, g=0.08, 95% CI [0.33 - 1.26]        | 0                                           |
 | Write meaning             | 0                                          | K=1, g=2.7, 95% CI [0.87 - 2.54]           |
 |                           |                                            |                                             |
-| Language proficiency      | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (2) =12.33, I^2 = 87.67, p =0.00         |
+| **Language proficiency**      | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (2) =12.33, I^2 = 87.67, p =0.00         |
 |                           |                                            |                                             |
 | Beginner                  | K=1, g=0.22, 95% CI [0.22-0.22]           | K=10, g=-0.02, 95% CI [-0.95 - 0.93]      |
 | Beyond-beginner           | K=1, g=0.55, 95% CI [0.03 - 11]           | K=7, g=0.49, 95% CI [0.21 - 0.76]         |
 | Mixed                     | K=1, g=0.22, 95% CI [1.2 - 76]            | 0                                           |
 | NR                        | K=3, g=-0.25, 95% CI [-0.91 - 0.42]       | K=9, g=0.03, 95% CI [0.05 - 0.55]         |
 |                           |                                            |                                             |
-| Mother tongue             | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (8) =84.46, I^2 = 87.67, p =0.00         |
+| **Mother tongue**             | Q (3) =13.74, I^2 = 65.13, p =0.00        | Q (8) =84.46, I^2 = 87.67, p =0.00         |
 |                           |                                            |                                             |
 | Arabic                    | 0                                          | K=1, g=-0.24
 
@@ -126,12 +124,12 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 | Thai                      | 0                                          | K=1, g=-0.1, 95% CI [-0.78 - 0.58]         |
 | Turkish                   | 0                                          | K=5, g=0.28, 95% CI [-0.32 - 0.86]         |
 |                           |                                            |                                             |
-| Target language           | Q (1) =7.92, I^2 = 63.38, p =0.00         | Q (1) =16.01, I^2 = 85.62, p =0.00        |
+| **Target language**           | Q (1) =7.92, I^2 = 63.38, p =0.00         | Q (1) =16.01, I^2 = 85.62, p =0.00        |
 |                           |                                            |                                             |
 | English                   | K=4, g=0.42, 95% CI [0.82 - 1.5]          | K=22, g=0.53, 95% CI [0.19 - 0.89]        |
 | French                    | K=3, g=-0.66, 95% CI [1.11 – 9.78]        | K=4, g=-0.69, 95% CI [1.03 - 0.36]        |
 |                           |                                            |                                             |
-| Target language skills    | Q (4) =19.82, I^2 = 6.43, p =0.00         | Q (5) =70.22, I^2 = 83.11, p =0.00        |
+| **Target language skills**    | Q (4) =19.82, I^2 = 6.43, p =0.00         | Q (5) =70.22, I^2 = 83.11, p =0.00        |
 |                           |                                            |                                             |
 | Listening Comprehension   | K=1, g=-1.21, 95% CI [-1.21- -1.21]       | K=2, g=-1.12, 95% CI [-3.43 - 1.2]        |
 | Pronunciation             | K=2, g=0.67, 95% CI [0.17 - 1.51]         | K=2, g=0.44, 95% CI [-0.3 - 1.16]         |
@@ -139,16 +137,7 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 | Speaking                  | 0                                          | K=1, g=1.73, 95% CI [0.92 - 2.53]         |
 | Vocabulary                | K=2, g=1.28, 95% CI [0.53 - 2.03]         | K=18, g=1.01, 95% CI [0.66 - 1.36]        |
 | Writing                   | K=1, g=1.21, 95% CI [0.22 - 2.21]         | K=1, g=0.3, 95% CI [-0.39 - 38]           |
-```
 
- 
-  
-![Moderator Charts](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/c23bbccb-24e9-4439-887e-5cbb8ee05631)
-![Moderator Charts](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/23ed9672-4fa1-4e8b-931a-86a718b2926f)
-![Moderator Charts](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/8ad0baa9-b8b6-47f8-910d-63302f83e571)
-![Moderator Charts](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/d5fc6ef1-b6ee-4114-9ba7-1a8e6622134d)
-![Moderator Charts](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/62c7792f-3aa7-4684-9710-3123dc01e7a8)
-![Moderator Charts](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/57421b25-2037-4dbc-84f7-b689f2c44e5d)
 
 ## **Moderators Varying Based on Conditions:**
 - The analysis shows that in MALL vs MMF comparison condition, feedback, intervention duration, and learning context **did not significantly** impact MALL's effect on SDL.
