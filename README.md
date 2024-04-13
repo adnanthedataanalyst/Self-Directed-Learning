@@ -190,7 +190,7 @@ Note. * =p < .05, RSR= Residual standard error, Adj R^2 =Adjusted R Square.
 |----------------------|---------|------|---------|
 | Application type     | 0.14    | 0.77 | 0.30    |
 | Assessment type      | 0.29    | 0.70 | 0.07    |
-| Device type          | 0.23    | 0.73 | 0.01    |
+| **Device type**          | 0.23    | 0.73 | 0.01    |
 | Educational level    | -0.13   | 0.88 | 0.95    |
 | Feedback             | -0.04   | 0.84 | 0.74    |
 | Intervention duration| 0.02    | 0.82 | 0.33    |
@@ -199,7 +199,7 @@ Note. * =p < .05, RSR= Residual standard error, Adj R^2 =Adjusted R Square.
 | Mother tongue        | 0.18    | 0.75 | 0.18    |
 | Publication type     | -0.12   | 0.87 | 0.93    |
 | Research setting     | -0.03   | 0.84 | 0.53    |
-| Target language      | 0.12    | 0.78 | 0.04    |
+| **Target language**      | 0.12    | 0.78 | 0.04    |
 | Target language skills | -0.03 | 0.73 | 0.07    |
 
 Note. RSR= Residual standard error, Adj R^2 =Adjusted R Square.
