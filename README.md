@@ -57,8 +57,8 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 - **Subgroup analysis**
 - **Signifcant moderators accross all conditions:**
 - Application type, assessment type, language proficiency, mother  tongue, target language, and target language skills significantly impact MALL effectiveness on SDL as contrasted to both MMF and PBL comparison conditions.
-- **Moderators Varying Based on Conditions:**
-- The analysis shows that in MALL vs MMF comparison condition, feedback, intervention  duration, and learning context did not significantly impact MALL's effect on SDL. However, in MALL VSPBL comparison condition, all three factors had a significant influence.  
+
+
 
 <div style="display: flex; flex-wrap: wrap;">
     <img width="800" height="600" alt="1" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/c23bbccb-24e9-4439-887e-5cbb8ee05631">
@@ -69,12 +69,21 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
     <img width="800" height="600" alt="6" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/57421b25-2037-4dbc-84f7-b689f2c44e5d">
 </div>
 
-# Univariate and Multivariate Meta-Regression Analysis
-**Univariate and Multivariate Meta-Regression Analysis**
-In this study, the univariate meta-regression analysis (Table 7) showed no single 
-independent variable that could explain the variability in the MMF condition. 
+# Moderators Varying Based on Conditions:
+- The analysis shows that in MALL vs MMF comparison condition, feedback, intervention  duration, and learning context did not significantly impact MALL's effect on SDL. However, in MALL VSPBL comparison condition, all three factors had a significant influence.  
+<img width="594" alt="7" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/0c7395a9-8077-44f1-b72d-0ba7a5db307e">
 
-However, in the PBL condition (Table 8), device type and target language accounted for 23% and 12% of the 
-variability, respectively, in the univariate analysis. Due to the high heterogeneity (86%) in PBL 
-studies, a multivariate meta-regression analysis (Table 9) was conducted. The best model, which 
-included application type, assessment type, device type, la
+<img width="560" alt="8" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/4fcb695f-463f-428e-b26f-cd0115f83fc9">
+
+# Univariate Meta-Regression Analysis
+
+In this study, the univariate meta-regression analysis (Table 7) showed no single independent variable that could explain the variability in the MMF condition.  However, in the PBL condition (Table 8), device type and target language accounted for 23% and 12% of the  variability, respectively, in the univariate analysis. 
+
+<img width="430" alt="1" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/ed6699b8-e446-4114-a7d8-958579d69053">
+
+# Multivariate Meta-Regression Analysis
+Due to the high heterogeneity (86%) in PBL  studies, a multivariate meta-regression analysis (Table 9) was conducted. The best model, which 
+included application type, assessment type, device type, language proficiency, learning context,  and mother tongue, accounted for 92% of the variability. 
+<img width="458" alt="2" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/0f158655-d28a-494e-884f-33da671ca3b8">
+
+
