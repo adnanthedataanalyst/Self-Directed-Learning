@@ -30,16 +30,22 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 - Moderation analysis is conducted using subgroup and meta-regression analyses.
 
 ## **Results:**
-- This meta-analysis synthesized data from 7 studies comparing MALL vs MMF and 26 studies comparing MALL vs PBL, all published between 2009 and 2021.
-- These studies collectively involved 1,964 participants and aimed to assess MALL's effect on SDL under varying comparison conditions.
+- Figure 1 shows that this meta-analysis synthesized data from 27 studies: 7 studies with 459 participants comparing MALL vs MMF and 26 studies with 1,505 participants comparing MALL vs PBL, all published between 2009 and 2021.
   
 <img width="800" alt="Screenshot 2024-04-13 115112" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/acdf5869-7f00-4a61-ad95-89b743abbdaf">
 
-  
-- **The MALL vs CBL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016) to calculate an aggregate effect size.
-- Findings are organized by research questions.
+# Publication bias
+
+Publication bias was assessed using funnel plots and Rosenthal's fail-safe N test. Potential publication bias was noted, but it was deemed insignificant based on Rosenthal’s fail-safe N test.
+
+- <img width="800" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/5f78b5f2-2716-4447-a611-44e51e1e774d">
+- <img width="800" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/26f1b2d8-656c-4aa0-a4dd-bb255326c3a9">
+
+ 
 
 ### **RQ1:** 
+- **The MALL vs CBL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016) to calculate an aggregate effect size.
+- Findings are organized by research questions.
 - **MALL vs. MMF (Technology-Based with a Feature vs. Technology-Based without a Feature):**
   - MALL typically has a small impact on enhancing SDL compared to MMF technology-based methods without a particular feature.
 - **MALL vs. PBL (Technology-Based vs. Non-Technology-Based):**
@@ -217,13 +223,7 @@ Note. RSR= Residual standard error, Adj R^2 =Adjusted R Square.
 Note. * =p < .05, RSR= Residual standard error, Adj R^2 =Adjusted R Square.
 
 
-# Publication bias
-
-Publication bias was assessed using funnel plots and Rosenthal's fail-safe N test. Potential publication bias was noted, but it was deemed insignificant based on Rosenthal’s fail-safe N test.
-
-- <img width="800" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/5f78b5f2-2716-4447-a611-44e51e1e774d">
-- <img width="800" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/26f1b2d8-656c-4aa0-a4dd-bb255326c3a9">
-
+ 
 # Insights and Applications for Practitioners, Researchers, Teachers, App Developers, and Decision Makers
 
 **Practitioners:**
