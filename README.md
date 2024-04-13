@@ -42,7 +42,7 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 ### **RQ1:** 
 - **MALL vs. MMF (Technology-Based with a Feature vs. Technology-Based without a Feature):**
   - MALL typically has a small impact on enhancing SDL compared to MMF technology-based methods without a particular feature.
-- **MALL vs. PBL (Technology-Based vs. Non-Technology-Based with a Feature):**
+- **MALL vs. PBL (Technology-Based vs. Non-Technology-Based):**
   - MALL generally has a bigger impact on improving SDL compared to PBL (Paper-Based Learning)
     
   ![Comparison Chart](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce)
