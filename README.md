@@ -208,8 +208,14 @@ Note. RSR= Residual standard error, Adj R^2 =Adjusted R Square.
 
 ## **Multivariate Meta-Regression Analysis**
 - Due to the high heterogeneity (86%) in PBL studies, a multivariate meta-regression analysis was conducted. The best model, which included application type, assessment type, device type, language proficiency, learning context, and mother tongue, accounted for 92% of the variability.
-  
-  ![Meta-Regression Analysis](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/0f158655-d28a-494e-884f-33da671ca3b8)
+
+**Table 9: The Summary Model of Application Type, Assessment Type, Device Type, Language Proficiency, Learning Context, and Mother Tongue**
+| Model | Adj R^2 | RSR  | p-value |
+|-------|---------|------|---------|
+| 1     | 0.92    | 0.22 | 0.02    |
+
+Note. * =p < .05, RSR= Residual standard error, Adj R^2 =Adjusted R Square.
+
 
 # Publication bias
 
