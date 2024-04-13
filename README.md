@@ -46,7 +46,7 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 
 - **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (
 MALLvs MMF, and MALL vs PBL)?
-<img width="459" alt="Screenshot 2024-04-13 104923" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce">
+    <img width="459" alt="Screenshot 2024-04-13 104923" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce">
 
 
 - **RQ2:** What variables moderate MALL impacts on SDL in each comparison condition?
