@@ -141,6 +141,30 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 - The analysis shows that in MALL vs MMF comparison condition, feedback, intervention duration, and learning context **did not significantly** impact MALL's effect on SDL.
 - However, in MALL vs PBL comparison condition, all three factors had a significant influence.
 
+
+| Moderator                 | MMF                                        | PBL                                         |
+|---------------------------|--------------------------------------------|---------------------------------------------|
+| **Feedback**                  | Q (1) =1.38, I^2 = 72.7, p =0.2           | Q (1) =5.05, I^2 = 87.11, p =0.02          |
+|                           |                                            |                                             |
+| By application            | K=1, g=-0.26, 95% CI [-0.82 - 0.31]       | 0                                           |
+| NR                        | K=6, g=0.52, 95% CI [-2.58 - 2.17]        | K=24, g=-0.21, 95% CI [-2.58 - 2.17]      |
+| 
+| **Intervention duration**     | Q (3) =2.38, I^2 = 85.63, p =0.4          | Q (2) =19.47, I^2 = 87.19, p =0.00        |
+|                           |                                            |                                             |
+| Less than four weeks      | K=1, g=-0.2, 95% CI [-1.28 - 0.88]        | K=3, g=-0.55, 95% CI [1.31 - 0.23]        |
+| Less than ten weeks       | K=1, g=0.51, 95% CI [0.46 - 47]           | K=14, g=0.35, 95% CI [-0.04 - 0.73]       |
+| Less than twenty weeks    | K=4, g=0.57, 95% CI [0.3 - 43]            | K=9, g=-0.17, 95% CI [0.57 - 0.23]        |
+| One week                  | K=1, g=0.22, 95% CI [-0.76 - 1.2]         |                                             |
+| 
+|**Learning context**          | Q (3) =1.16, I^2 = 75.16, p =0.20         | Q (3) =13, I^2 = 87.7, p =0.00            |
+|                           |                                            |                                             |
+| Formal                    | K=1, g=0.01, 95% CI [0.58 - 0.58]        | K=4, g=0.19, 95% CI [-1.11 - 1.47]        |
+| Informal                  | K=6, g=0.01, 95% CI [-0.58 - 0.58]       | K=19, g=-0.55, 95% CI [0.89 - 0.2]       |
+| Mixed                     | 0                                          | K=3, g=-0.13, 95% CI [0.61 - 0.36]        |
+
+Note. 0= A value of "0" in the table indicates that there were no available studies or data for a particular subcategory within a specific variable, under certain conditions, NR= not reported, K = number of studies, CI = confidence interval, df = degree of freedom, g= Hedges’ g.
+
+
  <img width="800" alt="5" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/935a6145-7121-4b5d-9424-11b4f8ca0b3d">
  
 <img width="800" alt="6" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/7683e42b-6490-4638-a673-4079d4b003ec">
