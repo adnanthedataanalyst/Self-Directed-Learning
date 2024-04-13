@@ -44,10 +44,14 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 - **The MALL vs CBL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016) to calculate an aggregate effect size.
 - Findings are organized by research questions.
 
-- **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALLvs MMF" tecnology based with a feature vs tecnology based without a feature, and MALL vs PBL"tecnology based with a feature vs none-tecnology based with a feature)?
-- Tech
+**RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALLvs MMF" tecnology based with a feature vs tecnology based without a feature, and MALL vs PBL"tecnology based with a feature vs none-tecnology based with a feature)?
+- MALL vs. MMF (Technology-Based with a Feature vs. Technology-Based without a Feature):
+- MALL typically has a small impact on enhancing SDL compared to MMF technology-based methods without a particular feature.
+- MALL vs. PBL (Technology-Based with a Feature vs. Non-Technology-Based with a Feature):
+- MALL generally has a bigger impact on improving SDL compared to PBL (Paper-Based Learning) technology-based methods when both include a particular feature.
 
-<img width="459" alt="Screenshot 2024-04-13 104923" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce">
+<img width="600" height="400" alt="Screenshot 2024-04-13 104923" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce">
+
 
 
 - **RQ2:** What variables moderate MALL impacts on SDL in each comparison condition?
