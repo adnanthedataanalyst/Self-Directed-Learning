@@ -80,7 +80,7 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 
 Publication bias was assessed using funnel plots and Rosenthal's fail-safe N test. 
 
-- <img width="339" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/5f78b5f2-2716-4447-a611-44e51e1e774d">
-- <img width="388" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/26f1b2d8-656c-4aa0-a4dd-bb255326c3a9">
+- <img width="800" alt="3" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/5f78b5f2-2716-4447-a611-44e51e1e774d">
+- <img width="800" alt="4" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/26f1b2d8-656c-4aa0-a4dd-bb255326c3a9">
 
 
