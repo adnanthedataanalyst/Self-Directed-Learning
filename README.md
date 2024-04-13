@@ -32,7 +32,8 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 ## **Results:**
 - This meta-analysis synthesized data from 7 studies comparing MALL vs MMF and 26 studies comparing MALL vs PBL, all published between 2009 and 2021.
 - These studies collectively involved 1,964 participants and aimed to assess MALL's effect on SDL under varying comparison conditions.
-<img width="437" alt="Screenshot 2024-04-13 115112" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/acdf5869-7f00-4a61-ad95-89b743abbdaf">
+  
+<img width="800" alt="Screenshot 2024-04-13 115112" src="https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/acdf5869-7f00-4a61-ad95-89b743abbdaf">
 
   
 - **The MALL vs CBL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016) to calculate an aggregate effect size.
