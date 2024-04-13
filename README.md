@@ -40,6 +40,7 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
   - MALL typically has a small impact on enhancing SDL compared to MMF technology-based methods without a particular feature.
 - **MALL vs. PBL (Technology-Based vs. Non-Technology-Based with a Feature):**
   - MALL generally has a bigger impact on improving SDL compared to PBL (Paper-Based Learning)
+    
   ![Comparison Chart](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/dbd60214-8587-45eb-ac8c-32ebe86c92ce)
 
 ### **RQ2:**
@@ -56,13 +57,16 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 
 ## **Moderators Varying Based on Conditions:**
 - The analysis shows that in MALL vs MMF comparison condition, feedback, intervention duration, and learning context did not significantly impact MALL's effect on SDL. However, in MALL vs PBL comparison condition, all three factors had a significant influence.
+  
   ![Moderator Chart](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/0c7395a9-8077-44f1-b72d-0ba7a5db307e)
   ![Moderator Chart](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/4fcb695f-463f-428e-b26f-cd0115f83fc9)
 
 ## **Univariate Meta-Regression Analysis**
 - In this study, the univariate meta-regression analysis showed no single independent variable that could explain the variability in the MMF condition. However, in the PBL condition, device type and target language accounted for 23% and 12% of the variability, respectively, in the univariate analysis.
+  
   ![Meta-Regression Analysis](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/ed6699b8-e446-4114-a7d8-958579d69053)
 
 ## **Multivariate Meta-Regression Analysis**
 - Due to the high heterogeneity (86%) in PBL studies, a multivariate meta-regression analysis was conducted. The best model, which included application type, assessment type, device type, language proficiency, learning context, and mother tongue, accounted for 92% of the variability.
+  
   ![Meta-Regression Analysis](https://github.com/adnanthedataanalyst/Self-Directed-Learning/assets/152249280/0f158655-d28a-494e-884f-33da671ca3b8)
