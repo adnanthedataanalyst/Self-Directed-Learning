@@ -47,7 +47,6 @@ Publication bias was assessed using funnel plots and Rosenthal's fail-safe N tes
 ### **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALL vs CBL, MALL vs MMF, and MALL vs PBL)?
 
 - **The MALL vs CBL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016) to calculate an aggregate effect size.
-- Findings are organized by research questions.
 - **MALL vs. MMF (Technology-Based with a Feature vs. Technology-Based without a Feature):**
   - MALL typically has a small impact on enhancing SDL compared to MMF technology-based methods without a particular feature.
 - **MALL vs. PBL (Technology-Based vs. Non-Technology-Based):**
