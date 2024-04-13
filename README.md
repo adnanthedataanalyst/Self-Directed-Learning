@@ -11,11 +11,13 @@
   - MALL vs paper-based learning (PBL)
 - It also aims to identify condition-specific moderators.
 
- 
+# Research Questions
  Research questions focus comparing the effect of MALL on SDL in comparison to computer-based learning (CBL), MALL minus experimental feature (MMF), and paper-based learning (PBL), as well as moderators influencing these effects.
  
-**RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions ( MALL vs CBL, 
+- **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions ( MALL vs CBL, 
 MALLvs MMF, and MALL vs PBL)?
+
+- **RQ2:** What variables, if any, moderate MALL impacts on SDL in each comparison condition?
 
  
 # Theoretical Framework:
