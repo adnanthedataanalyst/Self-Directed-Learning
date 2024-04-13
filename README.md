@@ -45,6 +45,80 @@ Self-Determination Theory (SDT) and Tsai's framework serve as the theoretical un
 - **MALL vs. PBL (Technology-Based vs. Non-Technology-Based):**
   - MALL generally has a bigger impact on improving SDL compared to PBL (Paper-Based Learning)
  
+
+<table>
+  <tr>
+    <th></th>
+    <th style="width: 150px;">MMF</th>
+    <th style="width: 150px;">PBL</th>
+  </tr>
+  <tr>
+    <td>Model</td>
+    <td>RE</td>
+    <td>RE</td>
+  </tr>
+  <tr>
+    <td>K</td>
+    <td>7</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>g</td>
+    <td>0.40*</td>
+    <td>0.88*</td>
+  </tr>
+  <tr>
+    <td>95% CI</td>
+    <td>0.02 – 0.78</td>
+    <td>0.58 – 1.19</td>
+  </tr>
+  <tr>
+    <td>p</td>
+    <td>0.0418</td>
+    <td>0.0001</td>
+  </tr>
+  <tr>
+    <td>Test of heterogeneity</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Q</td>
+    <td>21.46*</td>
+    <td>614.25*</td>
+  </tr>
+  <tr>
+    <td>df</td>
+    <td>6</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>I^2%</td>
+    <td>65.01</td>
+    <td>86.45</td>
+  </tr>
+  <tr>
+    <td>P</td>
+    <td>0.0015</td>
+    <td>0.0001</td>
+  </tr>
+  <tr>
+    <td>Participants</td>
+    <td>459</td>
+    <td>1,505</td>
+  </tr>
+  <tr>
+    <td>Classic Fail-safe N</td>
+    <td>45</td>
+    <td>1,950</td>
+  </tr>
+</table>
+
+<p>Note. *p &lt; .05, NR= not reported, K = number of studies, CI = confidence interval, df = degree of freedom., g= Hedges’ g, Fail-safe N &gt; 5 Nes + 10</p>
+
+
+
+ 
 |                     |       MMF        |       PBL        |
 |---------------------|------------------|------------------|
 | Model               |        RE        |        RE        |
