@@ -1,0 +1,242 @@
+---
+title: "SDL MALL Vs MMF"
+author: "Adnan Mayof"
+date: "2024-04-06"
+output: html_document
+---
+ 
+
+```{r}
+# Libraries
+library(metafor)
+library(meta)
+#library(clubSandwich)
+library(effsize)
+library(esc)
+
+#install.packages("remotes")
+#remotes::install_github("MathiasHarrer/dmetar")
+#library(dmetar)
+ 
+ 
+```
+
+
+
+```{r}
+###  MALLL VS MMEF
+library(readxl)
+MALL_vs_MMF_Data <- read_excel("MALL_vs_MMF_Data.xlsx")
+View(MALL_vs_MMF_Data)
+attach(MALL_vs_MMF_Data)
+ 
+```
+
+
+
+```{r}
+#Defining variables
+yiMALL_vs_MMF_Data <- HedgesgMALL_vs_MMF_Data
+viMALL_vs_MMF_Data <- VarianceMALL_vs_MMF_Data
+seiMALL_vs_MMF_Data <- StandardErrorMALL_vs_MMF_Data
+ 
+ 
+```
+
+
+
+```{r}
+
+# Attach MALL_vs_MMF_Data
+attach(MALL_vs_MMF_Data)
+ 
+ 
+```
+
+
+
+```{r}
+resMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, random = ~ 1 | StudyIdMALL_vs_MMF_Data/AuthorMALL_vs_MMF_Data,data = MALL_vs_MMF_Data, method = "REML")
+resMALL
+ 
+ 
+```
+
+
+
+```{r}
+#The var.comp function in {dmetar} can be to calculate multilevel I2values.
+#resi2MALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, random = ~ 1 | AuthorMALL_vs_MMF_Data/Samplesize,test = "t",data = MALL_vs_MMF_Data, method = "REML")
+#i2MALL <- var.comp(resi2MALL)
+#summary(i2MALL)
+#plot(i2MALL)
+ 
+ 
+```
+ 
+
+
+```{r}
+#Robust cluster variance estimation function #clubSandwich::coef_test (variable, vcov = "CR2")
+#The CR2 indicates that the standard errors will be corrected using Tipton and Pustejovsky's (2018)bias-reduced linearization estimator.
+#clubSandwich::coef_test(resMALL, vcov = "CR2") 
+#clubSandwich::conf_int(resMALL, vcov = "CR2") 
+ 
+ 
+```
+
+
+
+```{r}
+#metafor::funnel(resMALL)
+#metafor::forest(resMALL)
+ 
+ 
+```
+
+
+
+```{r}
+# fail-safe N computations
+fsn(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, seiMALL_vs_MMF_Data, data=MALL_vs_MMF_Data, type="Rosenthal")
+ 
+ 
+```
+
+
+
+```{r}
+#Categorical and continuous Data
+MALL_vs_MMF_Data$`ApplicationTypeMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`ApplicationTypeMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`AssessmentTypeMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`AssessmentTypeMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`DeviceTypeMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`DeviceTypeMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`EducationalLevelMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`EducationalLevelMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`FeedbackMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`FeedbackMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`InterventionDurationMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`InterventionDurationMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`LanguageProficiencyMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`LanguageProficiencyMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`LearningContextMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`LearningContextMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`MotherTongueMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`MotherTongueMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`PublicationTypeMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`PublicationTypeMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`ResearchSettingsMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`ResearchSettingsMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`TargetLanguageMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`TargetLanguageMALL_vs_MMF_Data`)
+MALL_vs_MMF_Data$`TargetLanguageSkillMALL_vs_MMF_Data`<- as.factor(MALL_vs_MMF_Data$`TargetLanguageSkillMALL_vs_MMF_Data`)
+str(MALL_vs_MMF_Data)
+
+
+ 
+ 
+```
+
+
+
+```{r}
+# Moderators
+appMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ ApplicationTypeMALL_vs_MMF_Data, method = "REML")
+appMALL
+
+assessMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ AssessmentTypeMALL_vs_MMF_Data)
+assessMALL
+
+deviceMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ DeviceTypeMALL_vs_MMF_Data)
+deviceMALL
+
+feedMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ FeedbackMALL_vs_MMF_Data)
+feedMALL
+
+interventionMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ InterventionDurationMALL_vs_MMF_Data) 
+interventionMALL
+
+proficiencyMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ LanguageProficiencyMALL_vs_MMF_Data)
+proficiencyMALL
+
+contextMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ LearningContextMALL_vs_MMF_Data)
+contextMALL
+
+motherMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ MotherTongueMALL_vs_MMF_Data)
+motherMALL
+
+publicationMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ PublicationTypeMALL_vs_MMF_Data)
+publicationMALL
+
+targetMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ TargetLanguageMALL_vs_MMF_Data)
+targetMALL
+
+skillMALL <- rma.mv(yiMALL_vs_MMF_Data, viMALL_vs_MMF_Data, mods = ~ TargetLanguageSkillMALL_vs_MMF_Data)
+skillMALL
+ 
+ 
+```
+
+
+
+```{r}
+# Regression
+# Attach MALL_vs_MMF_Data
+attach(MALL_vs_MMF_Data)
+
+model1MALL <- lm(yiMALL_vs_MMF_Data ~ ApplicationTypeMALL_vs_MMF_Data)
+summary(model1MALL)
+
+model2MALL <- lm(yiMALL_vs_MMF_Data ~ AssessmentTypeMALL_vs_MMF_Data)
+summary(model2MALL)
+
+model3MALL <- lm(yiMALL_vs_MMF_Data ~ DeviceTypeMALL_vs_MMF_Data)
+summary(model3MALL)
+
+model5MALL <- lm(yiMALL_vs_MMF_Data ~ FeedbackMALL_vs_MMF_Data)
+summary(model5MALL)
+
+model6MALL <- lm(yiMALL_vs_MMF_Data ~ InterventionDurationMALL_vs_MMF_Data)
+summary(model6MALL)
+
+model7MALL <- lm(yiMALL_vs_MMF_Data ~ LanguageProficiencyMALL_vs_MMF_Data)
+summary(model7MALL)
+
+model8MALL <- lm(yiMALL_vs_MMF_Data ~ LearningContextMALL_vs_MMF_Data)
+summary(model8MALL)
+
+model9MALL <- lm(yiMALL_vs_MMF_Data ~ MotherTongueMALL_vs_MMF_Data)
+summary(model9MALL)
+
+model10MALL <- lm(yiMALL_vs_MMF_Data ~ PublicationTypeMALL_vs_MMF_Data)
+summary(model10MALL)
+
+model12MALL <- lm(yiMALL_vs_MMF_Data ~ TargetLanguageMALL_vs_MMF_Data)
+summary(model12MALL)
+
+model13MALL <- lm(yiMALL_vs_MMF_Data ~ TargetLanguageSkillMALL_vs_MMF_Data)
+summary(model13MALL)
+
+model14 <- lm(yiMALL_vs_MMF_Data ~ TargetLanguageSkillMALL_vs_MMF_Data)
+summary(model14)
+
+model15 <- lm(yiMALL_vs_MMF_Data ~ TargetLanguageSkillMALL_vs_MMF_Data + TargetLanguageMALL_vs_MMF_Data)
+summary(model15)
+
+model16 <- lm(yiMALL_vs_MMF_Data ~ ApplicationTypeMALL_vs_MMF_Data + AssessmentTypeMALL_vs_MMF_Data + LanguageProficiencyMALL_vs_MMF_Data + MotherTongueMALL_vs_MMF_Data)
+summary(model16)
+
+model17 <- lm(yiMALL_vs_MMF_Data ~ DeviceTypeMALL_vs_MMF_Data + FeedbackMALL_vs_MMF_Data +
+                LearningContextMALL_vs_MMF_Data + PublicationTypeMALL_vs_MMF_Data + TargetLanguageMALL_vs_MMF_Data + TargetLanguageSkillMALL_vs_MMF_Data)
+summary(model17)
+
+model18 <- lm(yiMALL_vs_MMF_Data ~ ApplicationTypeMALL_vs_MMF_Data + AssessmentTypeMALL_vs_MMF_Data + DeviceTypeMALL_vs_MMF_Data + FeedbackMALL_vs_MMF_Data + LanguageProficiencyMALL_vs_MMF_Data +
+                LearningContextMALL_vs_MMF_Data + MotherTongueMALL_vs_MMF_Data + PublicationTypeMALL_vs_MMF_Data + TargetLanguageMALL_vs_MMF_Data + TargetLanguageSkillMALL_vs_MMF_Data)
+summary(model18)
+
+model19 <- lm(yiMALL_vs_MMF_Data ~ ApplicationTypeMALL_vs_MMF_Data + AssessmentTypeMALL_vs_MMF_Data + DeviceTypeMALL_vs_MMF_Data + FeedbackMALL_vs_MMF_Data + LanguageProficiencyMALL_vs_MMF_Data +
+                LearningContextMALL_vs_MMF_Data + MotherTongueMALL_vs_MMF_Data + PublicationTypeMALL_vs_MMF_Data + TargetLanguageMALL_vs_MMF_Data)
+summary(model19)
+
+model20 <- lm(yiMALL_vs_MMF_Data ~ AssessmentTypeMALL_vs_MMF_Data + TargetLanguageSkillMALL_vs_MMF_Data)
+summary(model20)
+
+model21 <- lm(yiMALL_vs_MMF_Data ~ DeviceTypeMALL_vs_MMF_Data + FeedbackMALL_vs_MMF_Data + ApplicationTypeMALL_vs_MMF_Data + TargetLanguageMALL_vs_MMF_Data + TargetLanguageMALL_vs_MMF_Data)
+summary(model21)
+
+model22 <- lm(yiMALL_vs_MMF_Data ~ TargetLanguageMALL_vs_MMF_Data + PublicationTypeMALL_vs_MMF_Data)
+summary(model22)
+ 
+```
+ 
+ 
