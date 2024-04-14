@@ -79,7 +79,7 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
   - Application type, assessment type, language proficiency, mother tongue, target language, and target language skills significantly impact MALL effectiveness on SDL as contrasted to both MMF and PBL comparison conditions.
 
 | Moderator                 | MALL vs. MMF                                       | MALL vs. PBL                                         |
-|---------------------------|--------------------------------------------|---------------------------------------------|
+|---------------------|--------------------------------------------|---------------------------------------------|
 | **Application type**          | Q (6) =13.74, I^2 = 86.33, p =0.00        | Q (12) =97.53, I^2 = 88.01, p =0.00         |
 |                           |                                            |                                             |
 | 3D Talking head           | K=1, g=0.25, 95% CI [-0.42 - 0.91]        | 0                                           |
