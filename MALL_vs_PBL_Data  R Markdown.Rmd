@@ -1,0 +1,463 @@
+---
+title: "SDL MALL vs PBL"
+author: "Adnan Mayof"
+date: "2024-04-06"
+output: html_document
+---
+
+ 
+
+```{r}
+# Libraries
+library(metafor)
+library(meta)
+library(clubSandwich)
+library(effsize)
+library(esc)
+
+#install.packages("remotes")
+#remotes::install_github("MathiasHarrer/dmetar")
+library(dmetar)
+
+```
+
+
+```{r}
+### MALL vs Paper-based learning
+library(readxl)
+MALL_vs_PBL_Data <- read_excel("MALL_vs_PBL_Data.xlsx")
+View(MALL_vs_PBL_Data)
+attach(MALL_vs_PBL_Data)
+
+
+```
+
+
+
+```{r}
+#Defining variables
+yiMALL_vs_PBL_Data <- HedgesgMALL_vs_PBL_Data
+viMALL_vs_PBL_Data <- VarianceMALL_vs_PBL_Data
+seiMALL_vs_PBL_Data<- StandardErrorMALL_vs_PBL_Data
+
+
+
+```
+
+
+```{r}
+#resPaper <- rma.mv(yiMALL_vs_PBL_Data,  viMALL_vs_PBL_Data,data= MALL_vs_PBL_Data)
+#resPaper
+
+resPaper <- rma.mv(yiMALL_vs_PBL_Data,  viMALL_vs_PBL_Data,  random = ~ 1 | StudyIdMALL_vs_PBL_Data/AuthorMALL_vs_PBL_Data,  data= MALL_vs_PBL_Data)
+resPaper
+
+#The var.comp function in {dmetar} can be to calculate multilevel I2values.
+resi2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2MALL_vs_PBL_Data <- var.comp(resi2MALL_vs_PBL_Data)
+summary(i2MALL_vs_PBL_Data)
+##plot(i2MALL_vs_PBL_Data)
+
+
+```
+
+
+```{r}
+#Robust cluster variance estimation function clubSandwich::coef_test (variable, vcov = "CR2")
+#The CR2 indicates that the standard errors will be corrected using Tipton and Pustejovsky's (2018)bias-reduced linearization estimator.
+clubSandwich::coef_test(resPaper, vcov = "CR2") 
+clubSandwich::conf_int(resPaper, vcov = "CR2")
+
+
+```
+
+
+```{r}
+metafor::funnel(resPaper)
+metafor::forest(resPaper)
+
+
+```
+
+
+
+```{r}
+# fail-safe N computations
+fsn(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, seiMALL_vs_PBL_Data, data=MALL_vs_PBL_Data, type="Rosenthal")
+
+
+```
+
+
+
+```{r}
+#Categorical and continuous Data
+MALL_vs_PBL_Data$`ApplicationTypeMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`ApplicationTypeMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`AssessmentTypeMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`AssessmentTypeMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`DeviceTypeMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`DeviceTypeMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`EducationalLevelMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`EducationalLevelMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`FeedbackMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`FeedbackMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`InterventionDurationMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`InterventionDurationMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`LanguageProficiencyMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`LanguageProficiencyMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`LearningContextMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`LearningContextMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`MotherTongueMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`MotherTongueMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`PublicationTypeMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`PublicationTypeMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`ResearchSettingsMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`ResearchSettingsMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`TargetLanguageMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`TargetLanguageMALL_vs_PBL_Data`)
+MALL_vs_PBL_Data$`TargetLanguageSkillMALL_vs_PBL_Data`<- as.factor(MALL_vs_PBL_Data$`TargetLanguageSkillMALL_vs_PBL_Data`)
+str(MALL_vs_PBL_Data)
+
+
+```
+
+
+
+```{r}
+# Moderators
+
+appMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ ApplicationTypeMALL_vs_PBL_Data, method = "REML")
+appMALL_vs_PBL_Data
+appi2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ ApplicationTypeMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2appMALL_vs_PBL_Data <- var.comp(appi2MALL_vs_PBL_Data)
+summary(i2appMALL_vs_PBL_Data)
+plot(i2appMALL_vs_PBL_Data)
+
+
+assessMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ AssessmentTypeMALL_vs_PBL_Data)
+assessMALL_vs_PBL_Data
+assessi2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ AssessmentTypeMALL_vs_PBL_Data,random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2assessMALL_vs_PBL_Data <- var.comp(assessi2MALL_vs_PBL_Data)
+summary(i2assessMALL_vs_PBL_Data)
+plot(i2assessMALL_vs_PBL_Data)
+
+deviceMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ DeviceTypeMALL_vs_PBL_Data)
+deviceMALL_vs_PBL_Data
+devi2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ DeviceTypeMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2devMALL_vs_PBL_Data <- var.comp(devi2MALL_vs_PBL_Data)
+summary(i2devMALL_vs_PBL_Data)
+plot(i2devMALL_vs_PBL_Data)
+
+edulevelMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ EducationalLevelMALL_vs_PBL_Data)
+edulevelMALL_vs_PBL_Data
+edui2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ EducationalLevelMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2eduMALL_vs_PBL_Data <- var.comp(edui2MALL_vs_PBL_Data)
+summary(i2eduMALL_vs_PBL_Data)
+plot(i2eduMALL_vs_PBL_Data)
+
+feedMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ FeedbackMALL_vs_PBL_Data)
+feedMALL_vs_PBL_Data
+feedi2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ FeedbackMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2feedMALL_vs_PBL_Data <- var.comp(feedi2MALL_vs_PBL_Data)
+summary(i2feedMALL_vs_PBL_Data)
+plot(i2feedMALL_vs_PBL_Data)
+
+interventionMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ InterventionDurationMALL_vs_PBL_Data) 
+interventionMALL_vs_PBL_Data
+interi2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ InterventionDurationMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2interMALL_vs_PBL_Data <- var.comp(interi2MALL_vs_PBL_Data)
+summary(i2interMALL_vs_PBL_Data)
+plot(i2interMALL_vs_PBL_Data)
+
+proficiencyMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ LanguageProficiencyMALL_vs_PBL_Data)
+proficiencyMALL_vs_PBL_Data
+proi2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ LanguageProficiencyMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2proMALL_vs_PBL_Data <- var.comp(proi2MALL_vs_PBL_Data)
+summary(i2proMALL_vs_PBL_Data)
+plot(i2proMALL_vs_PBL_Data)
+
+contextMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ LearningContextMALL_vs_PBL_Data)
+contextMALL_vs_PBL_Data
+coni2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ LearningContextMALL_vs_PBL_Data,random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2conMALL_vs_PBL_Data <- var.comp(coni2MALL_vs_PBL_Data)
+summary(i2conMALL_vs_PBL_Data)
+plot(i2conMALL_vs_PBL_Data)
+
+motherMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ MotherTongueMALL_vs_PBL_Data)
+motherMALL_vs_PBL_Data
+moi2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ MotherTongueMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2moMALL_vs_PBL_Data <- var.comp(moi2MALL_vs_PBL_Data)
+summary(i2moMALL_vs_PBL_Data)
+plot(i2moMALL_vs_PBL_Data)
+
+publicationMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ PublicationTypeMALL_vs_PBL_Data)
+publicationMALL_vs_PBL_Data
+pui2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ PublicationTypeMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2puMALL_vs_PBL_Data <- var.comp(pui2MALL_vs_PBL_Data)
+summary(i2puMALL_vs_PBL_Data)
+plot(i2puMALL_vs_PBL_Data)
+
+settingMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ ResearchSettingsMALL_vs_PBL_Data)
+settingMALL_vs_PBL_Data
+seti2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ ResearchSettingsMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2setMALL_vs_PBL_Data <- var.comp(seti2MALL_vs_PBL_Data)
+summary(i2setMALL_vs_PBL_Data)
+plot(i2setMALL_vs_PBL_Data)
+
+targetMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ TargetLanguageMALL_vs_PBL_Data)
+targetMALL_vs_PBL_Data
+tari2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ TargetLanguageMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2tarMALL_vs_PBL_Data <- var.comp(tari2MALL_vs_PBL_Data)
+summary(i2tarMALL_vs_PBL_Data)
+plot(i2tarMALL_vs_PBL_Data)
+
+skillMALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ TargetLanguageSkillMALL_vs_PBL_Data)
+skillMALL_vs_PBL_Data
+skilli2MALL_vs_PBL_Data <- rma.mv(yiMALL_vs_PBL_Data, viMALL_vs_PBL_Data, mods = ~ TargetLanguageSkillMALL_vs_PBL_Data, random = ~ 1 | AuthorMALL_vs_PBL_Data/StudyIdMALL_vs_PBL_Data,test = "t",data = MALL_vs_PBL_Data, method = "REML")
+i2skillMALL_vs_PBL_Data <- var.comp(skilli2MALL_vs_PBL_Data)
+summary(i2skillMALL_vs_PBL_Data)
+plot(i2skillMALL_vs_PBL_Data)
+
+
+
+
+```
+
+
+```{r}
+# Regression
+
+model1MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data)
+summary(model1MALL_vs_PBL_Data)
+clubSandwich::coef_test(model1MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model1MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$ApplicationTypeMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$ApplicationTypeMALL_vs_PBL_Data, ref = "SMS")
+model1refPaper <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model1refPaper)
+clubSandwich::coef_test(model1refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model1refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model2MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ AssessmentTypeMALL_vs_PBL_Data)
+summary(model2MALL_vs_PBL_Data)
+clubSandwich::coef_test(model2MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model2MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$AssessmentTypeMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$AssessmentTypeMALL_vs_PBL_Data, ref = "NR")
+model2refPaper <- lm(yiMALL_vs_PBL_Data ~ AssessmentTypeMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model2refPaper)
+clubSandwich::coef_test(model2refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model2refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model3MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ DeviceTypeMALL_vs_PBL_Data)
+summary(model3MALL_vs_PBL_Data)
+clubSandwich::coef_test(model3MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model3MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$DeviceTypeMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$DeviceTypeMALL_vs_PBL_Data, ref = "Smartphone")
+model13refPaper <- lm(yiMALL_vs_PBL_Data ~ DeviceTypeMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model13refPaper)
+clubSandwich::coef_test(model13refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model13refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model4MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ EducationalLevelMALL_vs_PBL_Data)
+summary(model4MALL_vs_PBL_Data)
+clubSandwich::coef_test(model4MALL_vs_PBL_Data, vcov = "CR2", cluster = EducationalLevelMALL_vs_PBL_Data)
+clubSandwich::conf_int(model4MALL_vs_PBL_Data, vcov = "CR2", cluster = EducationalLevelMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$EducationalLevelMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$EducationalLevelMALL_vs_PBL_Data, ref = "Secondary")
+model14refPaper <- lm(yiMALL_vs_PBL_Data ~ EducationalLevelMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model14refPaper)
+clubSandwich::coef_test(model14refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model14refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model5MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ FeedbackMALL_vs_PBL_Data)
+summary(model5MALL_vs_PBL_Data)
+clubSandwich::coef_test(model5MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model5MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$FeedbackMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$FeedbackMALL_vs_PBL_Data, ref = "Via Application")
+model5refPaper <- lm(yiMALL_vs_PBL_Data ~ FeedbackMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model5refPaper)
+clubSandwich::coef_test(model5refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model5refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model6MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ InterventionDurationMALL_vs_PBL_Data)
+summary(model6MALL_vs_PBL_Data)
+clubSandwich::coef_test(model6MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model6MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$InterventionDurationMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$InterventionDurationMALL_vs_PBL_Data, ref = "Less than ten weeks")
+model6refPaper <- lm(yiMALL_vs_PBL_Data ~ InterventionDurationMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model6refPaper)
+clubSandwich::coef_test(model6refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model6refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+
+model7MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ LanguageProficiencyMALL_vs_PBL_Data)
+summary(model7MALL_vs_PBL_Data)
+clubSandwich::coef_test(model7MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model7MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$LanguageProficiencyMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$LanguageProficiencyMALL_vs_PBL_Data, ref = "NR")
+model7refPaper <- lm(yiMALL_vs_PBL_Data ~ LanguageProficiencyMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model7refPaper)
+clubSandwich::coef_test(model7refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model7refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model8MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ LearningContextMALL_vs_PBL_Data)
+summary(model8MALL_vs_PBL_Data)
+clubSandwich::coef_test(model8MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model8MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$LearningContextMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$LearningContextMALL_vs_PBL_Data, ref = "Mixed")
+model8refPaper <- lm(yiMALL_vs_PBL_Data ~ LearningContextMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model8refPaper)
+clubSandwich::coef_test(model8refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model8refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model9MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ MotherTongueMALL_vs_PBL_Data)
+summary(model9MALL_vs_PBL_Data)
+clubSandwich::coef_test(model9MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model9MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$MotherTongueMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$MotherTongueMALL_vs_PBL_Data, ref = "Turkish")
+model9refPaper <- lm(yiMALL_vs_PBL_Data ~ MotherTongueMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model9refPaper)
+clubSandwich::coef_test(model9refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model9refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model10MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ PublicationTypeMALL_vs_PBL_Data)
+summary(model10MALL_vs_PBL_Data)
+clubSandwich::coef_test(model10MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model10MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$PublicationTypeMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$PublicationTypeMALL_vs_PBL_Data, ref = "Dissertation")
+model10refPaper <- lm(yiMALL_vs_PBL_Data ~ PublicationTypeMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model10refPaper)
+clubSandwich::coef_test(model10refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model10refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model11MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ ResearchSettingsMALL_vs_PBL_Data)
+summary(model11MALL_vs_PBL_Data)
+clubSandwich::coef_test(model11MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model11MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$ResearchSettingsMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$ResearchSettingsMALL_vs_PBL_Data, ref = "Second")
+model11refPaper <- lm(yiMALL_vs_PBL_Data ~ ResearchSettingsMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model11refPaper)
+clubSandwich::coef_test(model11refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model11refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model12MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data~ TargetLanguageMALL_vs_PBL_Data)
+summary(model12MALL_vs_PBL_Data)
+clubSandwich::coef_test(model12MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model12MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$TargetLanguageMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$TargetLanguageMALL_vs_PBL_Data, ref = "French")
+model12refPaper <- lm(yiMALL_vs_PBL_Data ~ TargetLanguageMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model12refPaper)
+clubSandwich::coef_test(model12refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model12refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+model13MALL_vs_PBL_Data <- lm(yiMALL_vs_PBL_Data ~ TargetLanguageSkillMALL_vs_PBL_Data)
+summary(model13MALL_vs_PBL_Data)
+clubSandwich::coef_test(model13MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model13MALL_vs_PBL_Data, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+MALL_vs_PBL_Data$TargetLanguageSkillMALL_vs_PBL_Data <-relevel(MALL_vs_PBL_Data$TargetLanguageSkillMALL_vs_PBL_Data, ref = "Vocabulary")
+model13refPaper <- lm(yiMALL_vs_PBL_Data ~ TargetLanguageSkillMALL_vs_PBL_Data, data = MALL_vs_PBL_Data)
+summary(model13refPaper)
+clubSandwich::coef_test(model13refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+clubSandwich::conf_int(model13refPaper, vcov = "CR2", cluster = MALL_vs_PBL_Data$StudyIdMALL_vs_PBL_Data)
+
+
+
+```
+
+
+```{r}
+# Model 14
+model14 <- lm(yiMALL_vs_PBL_Data ~ DeviceTypeMALL_vs_PBL_Data + TargetLanguageMALL_vs_PBL_Data)
+summary(model14)
+# Adjusted R-squared: 0.2297 
+# p-value: 0.03298
+
+# Model 15
+model15 <- lm(yiMALL_vs_PBL_Data ~ DeviceTypeMALL_vs_PBL_Data + InterventionDurationMALL_vs_PBL_Data)
+summary(model15)
+# Adjusted R-squared: 0.2451 
+# p-value: 0.04054
+
+# Model 16
+model16 <- lm(yiMALL_vs_PBL_Data ~ DeviceTypeMALL_vs_PBL_Data + ResearchSettingsMALL_vs_PBL_Data)
+summary(model16)
+# Adjusted R-squared: 0.2297 
+# p-value: 0.03298
+
+# Model 17
+model17 <- lm(yiMALL_vs_PBL_Data ~ DeviceTypeMALL_vs_PBL_Data + TargetLanguageMALL_vs_PBL_Data)
+summary(model17)
+# Adjusted R-squared: 0.2297 
+# p-value: 0.03298
+
+# Model 18
+model18 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + DeviceTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + LearningContextMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data + PublicationTypeMALL_vs_PBL_Data + ResearchSettingsMALL_vs_PBL_Data + TargetLanguageMALL_vs_PBL_Data + TargetLanguageSkillMALL_vs_PBL_Data)
+summary(model18)
+# Insignificant
+
+# Model 19
+model19 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + DeviceTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + LearningContextMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data + TargetLanguageMALL_vs_PBL_Data + TargetLanguageSkillMALL_vs_PBL_Data)
+summary(model19)
+# Adjusted R-squared: 0.9267 
+# p-value: 0.0222
+
+# Model 20
+model20 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + DeviceTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data + TargetLanguageMALL_vs_PBL_Data + TargetLanguageSkillMALL_vs_PBL_Data)
+summary(model20)
+# Without LearningContextMALL_vs_PBL_Data 
+# Adjusted R-squared: 0.8861 
+# p-value: 0.01787
+
+# Model 21
+model21 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + DeviceTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data + TargetLanguageSkillMALL_vs_PBL_Data)
+summary(model21)
+# Without TargetLanguageMALL_vs_PBL_Data
+# Adjusted R-squared: 0.8861 
+# p-value: 0.01787
+
+# Model 22
+model22 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + DeviceTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data + TargetLanguageSkillMALL_vs_PBL_Data)
+summary(model22)
+# Without TargetLanguageMALL_vs_PBL_Data
+# Adjusted R-squared: 0.8861 
+# p-value: 0.01787
+
+# Model 23
+model23 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + DeviceTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + LearningContextMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data + TargetLanguageMALL_vs_PBL_Data)
+summary(model23)
+# Without TargetLanguageSkillMALL_vs_PBL_Data
+# Adjusted R-squared: 0.9293
+# p-value: 0.00246
+
+# Model 24
+model24 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + DeviceTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + LearningContextMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data)
+summary(model24)
+# Without TargetLanguageMALL_vs_PBL_Data
+# Adjusted R-squared: 0.9293
+# p-value: 0.00246
+
+# Model 25
+model25 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + DeviceTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data)
+summary(model25)
+# Without LearningContextMALL_vs_PBL_Data
+# Adjusted R-squared: 0.9018 
+# p-value: 0.002152
+
+# Model 26
+model26 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + AssessmentTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data)
+summary(model26)
+# Without DeviceTypeMALL_vs_PBL_Data
+# Adjusted R-squared: 0.9018 
+# p-value: 0.002152
+
+# Model 27
+model27 <- lm(yiMALL_vs_PBL_Data ~ ApplicationTypeMALL_vs_PBL_Data + LanguageProficiencyMALL_vs_PBL_Data + MotherTongueMALL_vs_PBL_Data)
+summary(model27)
+# Without DeviceTypeMALL_vs_PBL_Data
+# Adjusted R-squared: 0.7535  
+# p-value: 0.01629
+
+
+
+```
+ 
