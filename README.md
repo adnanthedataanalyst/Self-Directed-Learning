@@ -9,7 +9,7 @@ Despite numerous meta-analyses on mobile-assisted language learning (MALL), no m
 | Condition                               | Experimental Group                                             | Comparison Group                                      |
 |-----------------------------------------|----------------------------------------------------------------|-------------------------------------------------------|
 | MALL vs computer-based learning (CBL)   | Students learn through a mobile device                        | Students learn through desktop computers              |
-| MALL vs MALL minus experimental feature | Students learn through a mobile device with additional experimental feature(s) | Students learn through a mobile device with no additional experimental feature(s) |
+| MALL vs MALL minus experimental feature | Students learn through a mobile device with additional feature (e.g., with feedback) | Students learn through a mobile device with no additional feature (e.g., with feedback)  |
  
  **Technology-based learning vs non-technology-based learning**
  
