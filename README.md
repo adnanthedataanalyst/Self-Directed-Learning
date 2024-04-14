@@ -54,7 +54,7 @@ Publication bias was assessed using funnel plots and Rosenthal's fail-safe N tes
 - **MALL vs. PBL (Technology-Based vs. Non-Technology-Based):**
   - MALL generally has a bigger impact on improving SDL compared to PBL (Paper-Based Learning)
  
-|                     | MMF     | PBL     |
+|                     | MALL vs. MMF     | MALL vs. PBL     |
 |---------------------|---------|---------|
 | Model               | RE      | RE      |
 | K                   | 7       | 26      |
