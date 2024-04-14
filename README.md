@@ -49,6 +49,8 @@ th {
 }
 
 
+
+
 | Comparison Condition                               | Experimental Group                                             | Comparison Group                                      |
 |-----------------------------------------|----------------------------------------------------------------|-------------------------------------------------------|
 | MALL vs computer-based learning (CBL)   | Students learn through a mobile device                        | Students learn through desktop computers              |
