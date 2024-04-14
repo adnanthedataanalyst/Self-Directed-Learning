@@ -16,7 +16,7 @@ Despite numerous meta-analyses on mobile-assisted language learning (MALL), no m
  
 | Comparison Condition                      | Experimental Group                        | Comparison Group                         |
 |--------------------------------|--------------------------------------------|------------------------------------------|
-| MALL vs paper-based learning (PBL)   | Students learn through a mobile device     | Students learn through PBL               |
+| MALL vs paper-based learning (PBL)   | Students learn through a mobile device     | Students learn through **PBL**               |
 
 
 ## **Research Questions:**
