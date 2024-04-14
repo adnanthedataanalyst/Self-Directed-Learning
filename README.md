@@ -77,6 +77,43 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
   
 - **Significant moderators across all conditions:**
   - Application type, assessment type, language proficiency, mother tongue, target language, and target language skills significantly impact MALL effectiveness on SDL as contrasted to both MMF and PBL comparison conditions.
+ 
+
+| Moderator                 | MALL vs. MMF                                       | MALL vs. PBL                                         |
+|---------------------------|----------------------------------------------------|------------------------------------------------------|
+| **Application type**     | Q (6) =13.74, I^2 = 86.33, p =0.00                | Q (12) =97.53, I^2 = 88.01, p =0.00                 |
+|                           |                                                    |                                                      |
+| 3D Talking head           | K=1, g=0.25, 95% CI [-0.42 - 0.91]                | 0                                                    |
+| ACO                       | K=1, g=0.34, 95% CI [-0.38 - 1.05]                |                                                      |
+| CollocatApp               | 0                                                  | K=1, g=0.35, 95% CI [0.59 - 1.29]                   |
+| ...                       | ...                                                | ...                                                  |
+| **Assessment type**       | Q (3) =13.74, I^2 = 65.13, p =0.00                | Q (8) =93.61, I^2 = 83.53, p =0.00                   |
+|                           |                                                    |                                                      |
+| Building a sentence with a new word | 0                                          | K=1, g=0.08, 95% CI [0.5 - 1.1]                 |
+| Fill in the blank         | 0                                                  | K=2, g=0.34, 95% CI [0.26 - 0.92]                   |
+| Multiple choice           | 0                                                  | K=12, g=0.18, 95% CI [0.25 - 0.61]                  |
+| ...                       | ...                                                | ...                                                  |
+| **Language proficiency**  | Q (3) =13.74, I^2 = 65.13, p =0.00                | Q (2) =12.33, I^2 = 87.67, p =0.00                   |
+|                           |                                                    |                                                      |
+| Beginner                  | K=1, g=0.22, 95% CI [0.22-0.22]                   | K=10, g=-0.02, 95% CI [-0.95 - 0.93]                |
+| Beyond-beginner           | K=1, g=0.55, 95% CI [0.03 - 11]                   | K=7, g=0.49, 95% CI [0.21 - 0.76]                   |
+| Mixed                     | K=1, g=0.22, 95% CI [1.2 - 76]                    | 0                                                    |
+| ...                       | ...                                                | ...                                                  |
+| **Target language**       | Q (1) =7.92, I^2 = 63.38, p =0.00                 | Q (1) =16.01, I^2 = 85.62, p =0.00                  |
+|                           |                                                    |                                                      |
+| English                   | K=4, g=0.42, 95% CI [0.82 - 1.5]                  | K=22, g=0.53, 95% CI [0.19 - 0.89]                  |
+| French                    | K=3, g=-0.66, 95% CI [1.11 – 9.78]                | K=4, g=-0.69, 95% CI [1.03 - 0.36]                  |
+|                           |                                                    |                                                      |
+| **Target language skills**| Q (4) =19.82, I^2 = 6.43, p =0.00                 | Q (5) =70.22, I^2 = 83.11, p =0.00                  |
+|                           |                                                    |                                                      |
+| Listening Comprehension   | K=1, g=-1.21, 95% CI [-1.21- -1.21]               | K=2, g=-1.12, 95% CI [-3.43 - 1.2]                  |
+| Pronunciation             | K=2, g=0.67, 95% CI [0.17 - 1.51]                 | K=2, g=0.44, 95% CI [-0.3 - 1.16]                   |
+| Reading Comprehension     | K=1, g=0.26, 95% CI [-0.72 - 1.24]        | K=2, g=-0.08, 95% CI [-0.54 - 89]         |
+| Speaking                  | 0                                          | K=1, g=1.73, 95% CI [0.92 - 2.53]         |
+| Vocabulary                | K=2, g=1.28, 95% CI [0.53 - 2.03]         | K=18, g=1.01, 95% CI [0.66 - 1.36]        |
+| Writing                   | K=1, g=1.21, 95% CI [0.22 - 2.21]         | K=1, g=0.3, 95% CI [-0.39 - 38]           |
+
+
 
 | Moderator                 | MALL vs. MMF                                       | MALL vs. PBL                                         |
 |---------------------|--------------------------------------------|---------------------------------------------|
