@@ -184,7 +184,7 @@ Note. 0= A value of "0" in the table indicates that there were no available stud
 
 
 ## **Univariate Meta-Regression Analysis**
-- In this study, the univariate meta-regression analysis showed no single independent variable that could explain the variability in the MALL vs MMF condition. However, in the MALL vs PBLcondition, device type and target language accounted for 23% and 12% of the variability, respectively, in the univariate analysis.
+- Table 7 shows that the univariate meta-regression analysis showed **no single** independent variable that could explain the variability in the MALL vs MMF condition. **However, in the MALL vs PBL condition**, Table 8 shows that device type and target language accounted for 23% and 12% of the variability, respectively, in the univariate analysis.
   
 **Table 7: Univariate Regression Results for Moderators in MALL vs MMF**
 | Moderator            | Adj R^2 | RSR  | p     |
