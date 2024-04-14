@@ -4,15 +4,17 @@
 Despite numerous meta-analyses on mobile-assisted language learning (MALL), no meta-analysis study has synthesized research on the impact of Mobile-Assisted Language Learning (MALL) on Self-Directed Learning (SDL) by analyzing its effects across different comparison conditions:
 - Comparison conditions:
   - **Technology-based learning vs technology-based learning**
-    | Condition                               | Experimental Group                                             | Comparison Group                                      |
+  
+| Condition                               | Experimental Group                                             | Comparison Group                                      |
 |-----------------------------------------|----------------------------------------------------------------|-------------------------------------------------------|
 | MALL vs computer-based learning (CBL)   | Students learn through a mobile device                        | Students learn through desktop computers              |
 | MALL vs MALL minus experimental feature | Students learn through a mobile device with additional experimental feature(s) | Students learn through a mobile device with no additional experimental feature(s) |
  
   - **Technology-based learning vs non-technology-based learning**
-  | Condition                      | Experimental Group                        | Comparison Group                         |
+| Condition                      | Experimental Group                        | Comparison Group                         |
 |--------------------------------|--------------------------------------------|------------------------------------------|
 | MALL vs paper-based learning   | Students learn through a mobile device     | Students learn through PBL               |
+
 
 - Or identified condition-specific moderators.
 
