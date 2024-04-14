@@ -1,7 +1,7 @@
 # **Exploring Moderators of Mobile-Assisted Language Learning Effect on Self-Directed Learning**
 
 ## **Gap:**
-Despite numerous meta-analyses on mobile-assisted language learning (MALL), no meta-analysis study has synthesized research on the impact of Mobile-Assisted Language Learning (MALL) on Self-Directed Learning (SDL) by analyzing its effects across different comparison conditions:
+Despite numerous meta-analyses on mobile-assisted language learning (MALL), no meta-analysis study has synthesized research on the impact of Mobile-Assisted Language Learning (MALL) on Self-Directed Learning (SDL) by analyzing its effects across different comparison conditions or identified moderators moderate each condition.
 
 **1. Technology-based learning vs technology-based learning**
 
@@ -18,15 +18,6 @@ Despite numerous meta-analyses on mobile-assisted language learning (MALL), no m
 |--------------------------------|--------------------------------------------|------------------------------------------|
 | MALL vs paper-based learning (PBL)   | Students learn through a mobile device     | Students learn through PBL               |
 
-
-- Or identified condition-specific moderators.
-
-## **Objectives:**
-- This study, grounded in self-determination theory, delves into the impact of Mobile-Assisted Language Learning (MALL) on Self-Directed Learning (SDL) by analyzing its effects across different comparison conditions:
-  - MALL vs CBL
-  - MALL vs MMF
-  - MALL vs PBL
-- Additionally, the study seeks to identify moderators specific to each condition.
 
 ## **Research Questions:**
 - **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALL vs CBL, MALL vs MMF, and MALL vs PBL)?
