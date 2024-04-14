@@ -133,6 +133,8 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 | Speaking                  | 0                                          | K=1, g=1.73, 95% CI [0.92 - 2.53]         |
 | Vocabulary                | K=2, g=1.28, 95% CI [0.53 - 2.03]         | K=18, g=1.01, 95% CI [0.66 - 1.36]        |
 | Writing                   | K=1, g=1.21, 95% CI [0.22 - 2.21]         | K=1, g=0.3, 95% CI [-0.39 - 38]           |
+
+
 **Note=** 0= A value of "0" in the table indicates that there were no available studies or data for a particular subcategory within a specific variable, under certain conditions, NR= not reported, K = number of studies, CI = confidence interval, df = degree of freedom, g= Hedges’ g.
 
 
