@@ -8,7 +8,7 @@ Despite numerous meta-analyses on mobile-assisted language learning (MALL), no m
 
 | Comparison Condition                               | Experimental Group                                             | Comparison Group                                      |
 |-----------------------------------------|----------------------------------------------------------------|-------------------------------------------------------|
-| MALL vs computer-based learning (CBL)   | Students learn through a mobile device                        | Students learn through desktop computers              |
+| MALL vs desktop computer learning (DCL)   | Students learn through a mobile device                        | Students learn through desktop computers              |
 | MALL vs MALL minus feature (MMF) | Students learn through a mobile device with additional feature (e.g., with feedback) | Students learn through a mobile device with no additional feature (e.g., with feedback)  |
 
 
@@ -20,7 +20,7 @@ Despite numerous meta-analyses on mobile-assisted language learning (MALL), no m
 
 
 ## **Research Questions:**
-- **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALL vs CBL, MALL vs MMF, and MALL vs PBL)?
+- **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALL vs DCL, MALL vs MMF, and MALL vs PBL)?
 - **RQ2:** What variables moderate MALL impacts on SDL in each comparison condition?
 
 ## **Theoretical Framework:**
@@ -46,9 +46,9 @@ Publication bias was assessed using funnel plots and Rosenthal's fail-safe N tes
 
  
 
-### **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALL vs CBL, MALL vs MMF, and MALL vs PBL)?
+### **RQ1:** What is the effect of MALL on SDL as contrasted to three comparison conditions (MALL vs DCL, MALL vs MMF, and MALL vs PBL)?
 
-- **The MALL vs CBL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016).
+- **The MALL vs DCL comparison condition was excluded from the analysis because** it did not meet the minimum requirement of two studies (Valentine et al., 2010; Goh et al., 2016).
 - **MALL vs. MMF (Technology-Based with a Feature vs. Technology-Based without a Feature):**
   - MALL typically has a small impact on enhancing SDL compared to MMF technology-based methods without a particular feature.
 - **MALL vs. PBL (Technology-Based vs. Non-Technology-Based):**
