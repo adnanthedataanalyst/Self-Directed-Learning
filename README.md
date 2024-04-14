@@ -78,7 +78,7 @@ Note. *p < .05, NR= not reported, K = number of studies, CI = confidence interva
 - **Significant moderators across all conditions:**
   - Application type, assessment type, language proficiency, mother tongue, target language, and target language skills significantly impact MALL effectiveness on SDL as contrasted to both MMF and PBL comparison conditions.
 
-| Moderator                 | MMF                                        | PBL                                         |
+| Moderator                 | MALL vs. MMF                                       | MALL vs. PBL                                         |
 |---------------------------|--------------------------------------------|---------------------------------------------|
 | **Application type**          | Q (6) =13.74, I^2 = 86.33, p =0.00        | Q (12) =97.53, I^2 = 88.01, p =0.00         |
 |                           |                                            |                                             |
@@ -153,7 +153,7 @@ Note. 0= A value of "0" in the table indicates that there were no available stud
 - The analysis shows that in MALL vs MMF comparison condition, feedback, intervention duration, and learning context **did not significantly** impact MALL's effect on SDL.
 - However, in MALL vs PBL comparison condition, all three factors had a significant influence.
 
-| Moderator              | MMF                                      | PBL                                      |
+| Moderator              | MALL vs. MMF                                      | MALL vs. PBL                                      |
 |------------------------|------------------------------------------|------------------------------------------|
 | **Feedback**               | Q (1) =1.38, I^2 = 72.7, p =0.2         | Q (1) =5.05, I^2 = 87.11, p =0.02       |
 |                        |                                          |                                          |
